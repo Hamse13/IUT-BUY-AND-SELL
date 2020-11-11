@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* background-image: url(./img.jpg); */
+    font-family: product sans,Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.header-section {
+    /* background-color: #283E4A; */
+    background-color: #020202;
+    height: 4rem;
+    /* position: fixed;
+    width: 100%; */
+}
+
+.header-section nav ul li img {
+    max-width: 10rem;
+}
+
+/*  Nav & Ul  */
+.header-items>ul {
+    display: flex;
+    list-style-type: none;
+}
+
+/*  Navigation list items */
+.header-items>ul>li {
+    padding-top: 0.8rem;
+}
+
+#home{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+#home:hover{
+    color: #bf3413;
+    cursor: pointer;
+}
+
+.header-section>.container>nav>ul>li:first-child {
+    margin-right: 3rem;
+}
+
+#search{
+    margin-right: auto;
+    width:50%;
+}
+
+.header-section>.container>nav>ul>li:not(:first-child) {
+    margin-top: 0.2rem;
+    margin-left: 0.4rem;
+}
+
+/* Input Element */
+input {
+    width: 100%;
+    height: 2rem;
+    border-radius: 0.4rem;
+    padding-left: 0.5rem;
+    font-weight: bold;
+    border: none;
+}
+
+/* Navigation list item link */
+nav>ul>li>#sign{
+    border: 1px white solid;
+    display: inline-block;
+    color: white;
+    font-size: 1.3rem;
+    text-decoration: none;
+    border-radius: 0.4rem;
+    width: 5rem;
+    padding: 0.15rem 1.2rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.header-section>.container>nav>ul>li:last-child {
+    /* margin-top: 0.5rem;
+    margin-left: 1rem; */
+    /* margin-bottom: 0.4rem; */
+    margin-left: 1rem;
+}
+
+
+
+nav>ul>li>#sign:hover{
+    background-color: #bf3413;
+}
+
+.fas:hover{
+    color: #bf3413;
+}
+
+
+
+.wrapper{
+    display: grid;
+    grid-template-columns: 20vw auto;
+    grid-gap: 3rem;
+}
+
+
+.sidebar{
+    position: fixed;
+    top: 10vh;
+    height: calc(95vh - 63px);
+    width: 20vw;
+    /* border-right: 2px #ff3c3c solid; */
+    background-color:#020202;
+    overflow-x: auto;
+    z-index: 500;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    
+}
+
+.sidebar-header {
+    padding: 1rem;
+}
+
+.sidebar-header h3 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #bf3413;
+}
+
+.sidebar-nav p{
+    color: white;
+    font-weight: bold;
+    padding: 0.8rem;
+    padding-bottom: unset;
+    
+}
+
+
+.sidebar-nav ul{
+    list-style-type: none;
+}
+
+.sidebar-nav ul li{
+    font-size: 1.3rem;
+    color: white;
+    padding: 1rem; 
+    padding-bottom: 1.5rem; 
+    border-bottom: 1px white solid;
+}
+
+.sidebar-nav ul li:hover{
+    cursor: pointer;
+    color: #ff3c3c;
+}
+
+
+.main-page{
+    grid-column-start: 2;
+    width: 98%;
+    /* margin: auto; */
+    border: 1px red solid;
+    border-radius: 1rem;
+    margin-top: 15px;
+    background-color: #020202;
+    color: white;
+}
+
+.main-page-header{
+    color: white;
+    padding: 1rem;
+    border-bottom: 1px white solid;
+    display: flex;
+}
+
+.main-page-header h3{
+    color: white;
+    margin-right: auto;
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+
+
+.main-page-container{
+    /* display: flex; */
+    /* height: 36rem; */
+    /* width: 100%; */
+}
+
+
+
+/* For Users and their Details */
+
+.news-box img{
+    height: 250!important;
+    max-width: 350px!important;
+}
+
+.main-page-container .news-box{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+    padding: 1rem 0rem;
+    flex-wrap: wrap;
+
+}
+
+.news-box .user{
+    /* border: 1px green solid; */
+    color: black;
+    padding: 1rem;
+    padding-bottom: 2rem;
+    background-color: rgb(255, 255, 255);
+    /* margin-left: 1rem; */
+    margin-top: 1rem;
+    overflow: hidden;
+    border: 2px darkgray solid;
+}
+
+
+.news-box div:hover{
+    /* border-left: 4px #ff3c3c solid;
+    border-top: 4px #ff3c3c solid; */
+}
+
+p{
+    display: inline;
+}
+
+.det{
+    font-size: 1.2rem;
+}
+.news-box div h3 {
+    /* max-width: 350px; */
+    font-style: italic;
+}
